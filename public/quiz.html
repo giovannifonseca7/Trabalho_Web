@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Desenvolvimento Web</title>
+
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+
+	<script src="./app.js"></script>
+</head>
+<body>
+
+	<article class="titulo" id="titulo">
+		
+		<h1>Quiz Desenvolvimento Web</h1>
+
+	</article>
+
+		<br><br>
+
+		<!--  <form name="form_cadastro_candidato" action="http://andrebordignon.esy.es/php/incluicandidato.php">    -->
+
+
+			<form id="formulario" name="formulario" required>
+		
+
+	<fieldset class="fieldset">
+
+		<legend>Questões</legend>
+
+		<div id="div1" onmouseenter="mudaCor();" onmouseleave="voltaCor();">
+
+	<label  >Criador do HTML: </label>
+	<input type="text" name="criador" id="criador" required >
+
+	</div>
+
+	<br><br>
+
+	<div id="div2" onmouseenter="mudaCor2();" onmouseleave="voltaCor2();">
+
+	<label>Design flexível e adaptável: </label>
+	<input type="radio" name="design" id="responsivo" value="responsivo" required/>Responsivo 
+	<input type="radio" name="design" id="naoResponsivo" value="naoResponsivo" required/>Não responsivo
+
+	</div>
+
+	<br><br>
+
+	<div id="div3" onmouseenter="mudaCor3();" onmouseleave="voltaCor3();">
+
+	<label>Frameworks de desenvolvimento web: </label>
+	
+	<br>
+	<input type="checkbox" name="frameworks" id="bootstrap" value="Bootstrap">Bootstrap<br>
+  	<input type="checkbox" name="frameworks" id="springboot" value="Springboot">Springboot<br>
+  	<input type="checkbox" name="frameworks" id="angular" value="Angular">Angular<br>
+  	<input type="checkbox" name="frameworks" id="cordova" value="Cordova">Cordova<br>
+
+  	</div>
+
+	<br>
+
+	<div id="div4" onmouseenter="mudaCor4();" onmouseleave="voltaCor4();">
+
+	<label>Quantos anos tem o HTML: </label>
+	<input type="number" name="idade" id="idade" required>
+	
+	</div>
+
+	<br><br>
+
+	<div id="div5" onmouseenter="mudaCor5();" onmouseleave="voltaCor5();">
+
+	<label>Tag para agrupar formulário:</label>
+	<select name="tagFormulario" id="tagFormulario" required>
+
+		<option value="div">Div</option>
+		<option value="Form">Form</option>
+		<option value="span">Span</option>
+		<option value="body">Body</option>
+		<option value="input">Input</option>
+
+	</select>
+
+	</div>
+
+
+
+	<br><br>
+
+	<div id="div6" onmouseenter="mudaCor6();" onmouseleave="voltaCor6();">
+
+	<label>Tag para realçar textos pequenos: </label>
+	<input type="text" name="tagRealce" id="tagRealce" required>
+
+</div>
+
+	<br><br>
+
+	<div id="div7" onmouseenter="mudaCor7();" onmouseleave="voltaCor7();">
+
+	<label>Tag para relacionar html com estilo externo: </label>
+	<input type="text" name="tagEstilo" id="tagEstilo" required>
+
+	</div>
+
+	<br><br>
+
+	<div id="div8" onmouseenter="mudaCor8();" onmouseleave="voltaCor8();">
+
+	<label>Determina que partes da página serão modificadas: </label>
+	<input type="radio" name="modificador" id="seletor" value="Seletor" required/>Seletor 
+	<input type="radio" name="modificador" id="modificador" value="Propriedade" required/>Propriedade
+
+	</div>
+
+	<br><br>
+
+	<div id="div9" onmouseenter="mudaCor9();" onmouseleave="voltaCor9();">
+
+	<label>Atributo para agrupar vários elementos:</label>
+	<select name="atributoElementos" id="tagAgrupar" required>
+
+		<option value="id">Id</option>
+		<option value="h2">h2</option>
+		<option value="Classe">Classe</option>
+		<option value="title">Title</option>
+		<option value="head">Head</option>
+
+	</select>
+
+	</div>
+
+	<br><br>
+
+	<div id="div10" onmouseenter="mudaCor10();" onmouseleave="voltaCor10();">
+
+	<label>Elementos HTML: </label>
+	
+	<br>
+	<input type="checkbox" id="fontSize" name="fontSize" value="Font-size">Font-size<br>
+  	<input type="checkbox" id="background" name="background-color" value="Background-color">Background-color<br>
+  	<input type="checkbox" id="width" name="width" value="Width">Width<br>
+  	<input type="checkbox" id="heigth" name="heigth" value="Heigth">Heigth<br>
+
+	</fieldset>
+
+	</div>
+
+	<br><br>
+
+	<div class="botoes">
+
+	<input  type="submit" name="enviar" value="Enviar" onclick="contarRespostas();">
+
+	<input type="reset" name="limpar" value="Limpar">
+		
+
+	</div>
+
+	<!--   </form>   -->
+	</form>
+	
+	
+
+	<footer class="rodape">
+		
+		<h3>Desenvolvido por Giovanni Fonseca <br>giovanni.fonseca@aluno.ifsp.edu.br</h3>
+
+	</footer>
+
+</body>
+</html>
